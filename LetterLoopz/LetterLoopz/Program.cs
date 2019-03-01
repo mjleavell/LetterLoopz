@@ -6,7 +6,11 @@ namespace LetterLoopz
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Type some random letters");
+            Console.ReadLine();
+            var input = "";
+
+
         }
     }
 }
