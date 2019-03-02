@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LetterLoopz
 {
@@ -56,6 +57,17 @@ namespace LetterLoopz
 
             //// joining string to a separater and then writing it to a console
             //Console.WriteLine(string.Join('-', myCharacters));
+
+
+            // ------------- ANOTHER SOLUTION --------------
+            Console.WriteLine("Enter some letters");
+            var userInput = Console.ReadLine().ToLower();
+            var loopCount = 0;
+
+            var longStringOutput = string.Join('-', userInput.ToCharArray().Select(c => c.ToString().ToUpper() + new string(c, loopCount++)));
+            Console.WriteLine(longStringOutput);
+
+            Console.ReadLine();
         }
     }
 }
