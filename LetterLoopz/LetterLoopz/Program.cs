@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace LetterLoopz
 {
@@ -34,6 +35,27 @@ namespace LetterLoopz
             // ------ Output line is displayed in console -----
             Console.WriteLine(output);
             Console.ReadLine();
+
+            // ------------------ ALTERNATIVE SOLUTION -----------------------
+            //Console.WriteLine("Eneter some letters");
+            //var userInput = Console.ReadLine().ToLower();
+            //var loopCount = 0;
+            //var myCharacters = new List<string>();
+
+            //foreach (var character in userInput)
+            //{
+            //    var letterString = character.ToString().ToUpper();
+            //    // loopCount is going to give us the correct loopcount that we want so we dont have to use inner for loop
+            //    letterString += new string(character, loopCount); //strings have a constructor that you can pass things to
+
+            //    // adding string to a list
+            //    myCharacters.Add(letterString);
+
+            //    loopCount++;
+            //}
+
+            //// joining string to a separater and then writing it to a console
+            //Console.WriteLine(string.Join('-', myCharacters));
         }
     }
 }
